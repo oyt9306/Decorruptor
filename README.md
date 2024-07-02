@@ -2,7 +2,7 @@ Title : [Efficient Diffusion-Driven Corruption Editor for Test-Time Adaptation](
 
 Venue: ECCV 2024
 
-<img src=![decorruptor](https://github.com/oyt9306/Decorruptor/assets/41467632/cde9d242-8a9b-4104-a2ce-91131a90aba5) width=500>
+![decorruptor](https://github.com/oyt9306/Decorruptor/assets/41467632/cde9d242-8a9b-4104-a2ce-91131a90aba5)
 
 # Abstract
 Test-time adaptation (TTA) addresses the unforeseen distribution shifts occurring during test time. In TTA, both performance and, memory and time consumption serve as crucial considerations. A recent diffusion-based TTA approach for restoring corrupted images involves image-level updates. However, using pixel space diffusion significantly increases resource requirements compared to conventional model updating TTA approaches, revealing limitations as a TTA method. To address this, we propose a novel TTA method by leveraging a latent diffusion model (LDM) based image editing model and fine-tuning it with our newly introduced corruption modeling scheme. This scheme enhances the robustness of the diffusion model against distribution shifts by creating (clean, corrupted) image pairs and fine-tuning the model to edit corrupted images into clean ones. Moreover, we introduce a distilled variant to accelerate the model for corruption editing using only 4 network function evaluations (NFEs). We extensively validated our method across various architectures and datasets including image and video domains. Our model achieves the best performance with a 100 times faster runtime than that of a diffusion-based baseline. Furthermore, it outpaces the speed of the model updating TTA method based on data augmentation threefold, rendering an image-level updating approach more practical.

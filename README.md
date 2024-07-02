@@ -14,7 +14,7 @@ In this repository, we further present to provide
 3) video corruption editing code (see 'decorruptor_Video_gen.ipynb'). 
 
 # Setup
-Install requirements using Python 3.9 and CUDA >= 11.6
+Install requirements using Python 3.9 and CUDA >= 11.4
 Need to support Jupyter Notebook for demo
 ```
 conda create -n decorruptor python=3.9 -y

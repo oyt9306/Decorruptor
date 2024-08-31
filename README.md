@@ -33,3 +33,7 @@ In __assets__ folder, we provide several sample images and videos for demo.
 - pixmix_samples : fractals and feature visualizations
 - videos : corrupted videos sampled from UCF-101C
 
+
+# Inference
+To perform inference using our Decorruptor-DPM/CM, please refer to the [DDA repository](https://github.com/shiyegao/DDA). 
+In brief, after generating the reverted images from the corrupted inputs, you can conduct ensemble testing to evaluate the performance of the input-level updates. Additionally, you can apply any model-update TTA methods (e.g., TENT) for further improvement.

@@ -1,10 +1,8 @@
 # Efficient Diffusion-Driven Corruption Editor for Test-Time Adaptation
+Paper Link : https://arxiv.org/abs/2403.10911
 
 **Conference**: ECCV 2024  
 **Authors**: Yeongtak Oh, Jonghyun Lee, Jooyoung Choi, Dahuin Jung, Uiwon Hwang, Sungroh Yoon
-
-Paper Link : https://arxiv.org/abs/2403.10911
----
 
 ## Abstract
 

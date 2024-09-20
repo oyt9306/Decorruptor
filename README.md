@@ -26,6 +26,34 @@ python -m ipykernel install --user --name decorruptor --display-name "decorrupto
 ```
 Then activate decorruptor Jupyter kernel and use it for model inference. 
 
+# Simple Inference 
+
+```python
+import numpy as np
+import torch 
+import random
+from pipeline.deccoruptor_lcm_pipe import IP2PLatentConsistencyModelPipeline
+from PIL import Image
+
+device='cuda'
+model_id = "Anonymous-12/DeCorruptor-CM" # Two model variants : DPM and CM
+scheduler = LCMScheduler.from_pretrained(model_id, subfolder="scheduler")
+pipe = IP2PLatentConsistencyModelPipeline.from_pretrained(model_id,
+                                            torch_dtype=torch.float16, 
+                                            scheduler=scheduler,
+                                            use_safetensors=True, 
+                                            safety_checker=None)
+pipe.to(device)
+image = Image.open('path/to/your_image')
+out_image = pipe(prompt=['Clean the image'], 
+            image=image,
+            num_images_per_prompt=1,
+            num_inference_steps=4, 
+            generator=generator,
+            image_guidance_scale=1.3,
+            guidance_scale=7.5).images[0]
+```
+
 # Datasets
 In __assets__ folder, we provide several sample images and videos for demo. 
 - clean_images : set of counterparts of corrupted images

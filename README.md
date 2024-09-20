@@ -12,7 +12,6 @@ Test-time adaptation (TTA) addresses the unforeseen distribution shifts occurrin
 <p align="center">
   <img src="https://github.com/oyt9306/Decorruptor/blob/main/__assets__/decorruptor_wide.png?raw=true" alt="Decorruptor" style="width:80%;">
 </p>
----
 
 ## Quick Start Guide
 ### Installation and Setup

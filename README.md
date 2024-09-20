@@ -40,17 +40,20 @@ Then activate decorruptor Jupyter kernel and use it for model inference.
 import numpy as np
 import torch
 from PIL import Image
+from diffusers import DDIMScheduler
 from pipeline.deccoruptor_dpm_pipe import ConsistInstructPix2PixPipeline
-from diffusers import LCMScheduler
 
 device = 'cuda'
-
+scheduler = DDIMScheduler(
+    beta_start=0.00085, beta_end=0.012, num_train_timesteps=1000,
+    beta_schedule="scaled_linear",
+    clip_sample=False, set_alpha_to_one=False)
 model_id = "Anonymous-12/DeCorruptor-DPM"
-scheduler = LCMScheduler.from_pretrained(model_id, subfolder="scheduler")
 pipe = ConsistInstructPix2PixPipeline.from_pretrained(
     model_id,
     torch_dtype=torch.float16,
     use_safetensors=True,
+    scheduler=scheduler, 
     safety_checker=None
 )
 pipe.to(device)

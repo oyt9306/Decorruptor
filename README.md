@@ -13,7 +13,7 @@ To address this, we propose a novel TTA method that leverages an image editing m
 
 Moreover, we introduce a distilled variant to accelerate the model for corruption editing using only 4 network function evaluations (NFEs). We extensively validated our method across various architectures and datasets, including image and video domains. Our model achieves the best performance with a 100× faster runtime than that of a diffusion-based baseline. Furthermore, it is three times faster than the previous model-updating TTA method that utilizes data augmentation, making an image-level updating approach more feasible.
 
-![Decorruptor]([images/logo.png](https://github.com/oyt9306/Decorruptor/blob/main/__assets__/decorruptor.jpg)
+<img src="https://github.com/oyt9306/Decorruptor/blob/main/__assets__/decorruptor.jpg?raw=true" alt="Decorruptor" style="width:80%;">
 
 ---
 ## Quick Start Guide

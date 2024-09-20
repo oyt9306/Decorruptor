@@ -1,5 +1,5 @@
 # Efficient Diffusion-Driven Corruption Editor for Test-Time Adaptation
-Paper Link : https://arxiv.org/abs/2403.10911
+Paper Link: https://arxiv.org/abs/2403.10911
 
 **Conference**: ECCV 2024  
 **Authors**: Yeongtak Oh*, Jonghyun Lee*, Jooyoung Choi, Dahuin Jung, Uiwon Hwang, Sungroh Yoon
@@ -13,6 +13,7 @@ Test-time adaptation (TTA) addresses the unforeseen distribution shifts occurrin
   <img src="https://github.com/oyt9306/Decorruptor/blob/main/__assets__/decorruptor_wide.png?raw=true" alt="Decorruptor" style="width:80%;">
 </p>
 ---
+
 ## Quick Start Guide
 ### Installation and Setup
 

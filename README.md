@@ -32,6 +32,7 @@ Then activate decorruptor Jupyter kernel and use it for model inference.
 import numpy as np
 import torch 
 import random
+from diffusers import LCMScheduler
 from pipeline.deccoruptor_lcm_pipe import IP2PLatentConsistencyModelPipeline
 from PIL import Image
 

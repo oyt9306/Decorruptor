@@ -2,7 +2,8 @@
 Paper Link : https://arxiv.org/abs/2403.10911
 
 **Conference**: ECCV 2024  
-**Authors**: Yeongtak Oh, Jonghyun Lee, Jooyoung Choi, Dahuin Jung, Uiwon Hwang, Sungroh Yoon
+**Authors**: Yeongtak Oh*, Jonghyun Lee*, Jooyoung Choi, Dahuin Jung, Uiwon Hwang, Sungroh Yoon
+(*: Equal Contribution)
 
 ## Abstract
 

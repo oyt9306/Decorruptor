@@ -10,7 +10,7 @@ Paper Link: https://arxiv.org/abs/2403.10911
 Test-time adaptation (TTA) addresses the unforeseen distribution shifts occurring during test time. In TTA, performance, memory consumption, and time consumption are crucial considerations. A recent diffusion-based TTA approach for restoring corrupted images involves image-level updates. However, using pixel space diffusion significantly increases resource requirements compared to conventional model updating TTA approaches, revealing limitations as a TTA method. To address this, we propose a novel TTA method that leverages an image editing model based on a latent diffusion model (LDM) and fine-tunes it using our newly introduced corruption modeling scheme. This scheme enhances the robustness of the diffusion model against distribution shifts by creating (clean, corrupted) image pairs and fine-tuning the model to edit corrupted images into clean ones. Moreover, we introduce a distilled variant to accelerate the model for corruption editing using only 4 network function evaluations (NFEs). We extensively validated our method across various architectures and datasets including image and video domains. Our model achieves the best performance with a 100 times faster runtime than that of a diffusion-based baseline. Furthermore, it is three times faster than the previous model updating TTA method that utilizes data augmentation, making an image-level updating approach more feasible.
 
 <p align="center">
-  <img src="https://github.com/oyt9306/Decorruptor/blob/main/__assets__/decorruptor_wide.png?raw=true" alt="Decorruptor" style="width:80%;">
+  <img src="https://github.com/oyt9306/Decorruptor/blob/main/__assets__/decorruptor_wide.png?raw=true" alt="Decorruptor" style="width:100%;">
 </p>
 
 ## Quick Start Guide
